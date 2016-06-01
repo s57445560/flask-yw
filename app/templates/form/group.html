@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../static/form/view.css" media="all">
+<script type="text/javascript" src="../static/form/view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="../static/form/top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a></a></h1>
+		<form  class="appnitro"  method="post">
+					<div class="form_description">
+			<p>创建主机组</p>
+		</div>						
+			<ul >
+			
+					<li id="li_1" >
+		<label class="description" for="element_1">主机组名称(默认为地名)</label>
+		<div>
+			<input id="element_1" name="group_form" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+			
+			    
+				<button type="submit" />提交</button>
+                                                                 {% for message in get_flashed_messages() %}
+                                                                      <span style="color: red;"> <p>{{message}}</p> </span>
+                                                                 {%endfor%}
+			</ul>
+		</form>	
+	</div>
+	<img id="bottom" src="../static/form/bottom.png" alt="">
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<style type="text/css">
+div#container{width:"100%"}
+div#header {background-color:#4682B4;background:url(bj.jpg);width:100%;text-align:center;}
+div#menu {background-color:#E6E6FA;height:35px;width:100%;float:left;}
+div#content {background-color:#EEEEEE;height:800px;width:100%;float:left;}
+div#footer {background-color:#99bbbb;clear:both;text-align:center;}
+.left-right-middle2{ 
+height:200px; 
+background-color:#69F; 
+top:50%; 
+margin-top:-100px; 
+}
+h1 {margin-bottom:0;}
+h2 {margin-bottom:0;font-size:18px;}
+ul {margin:0;}
+li {list-style:none;}
+</style>

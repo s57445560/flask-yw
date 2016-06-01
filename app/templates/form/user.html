@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../static/form/view.css" media="all">
+<script type="text/javascript" src="../static/form/view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="../static/form/top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a></a></h1>
+		<form id="form_1135590" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2></h2>
+			<p>创建主机组</p>
+		</div>						
+			<ul >
+			
+					<li id="li_6" >
+		<label class="description" for="element_6">服务器所属组 </label>
+		<div>
+		<select class="element select medium" id="element_6" name="group_id"> 
+			<option value="" selected="selected"></option>
+                        {% for list_group in group_id %}
+				<option value={{list_group}} >{{list_group}}</option>
+                        {% endfor %}
+
+		</select>
+		</div> 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">服务器自定义名称 </label>
+		<div>
+			<input id="element_5" name="user_c" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_1" >
+		<label class="description" for="element_1">服务器IP </label>
+		<div>
+			<input id="element_1" name="user_ip" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">服务器端口 </label>
+		<div>
+			<input id="element_2" name="user_p" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">服务器登录用户 </label>
+		<div>
+			<input id="element_3" name="user_u" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">服务器密码 </label>
+		<div>
+			<input id="element_4" name="user_d" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="1135590" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="提交" />
+		</li>
+			</ul>
+                                                                 {% for message in get_flashed_messages() %}
+                                                                      <span style="color: red;"> <p>{{message}}</p> </span>
+                                                                 {%endfor%}
+		</form>	
+	</div>
+	<img id="bottom" src="../static/form/bottom.png" alt="">
+	</body>
+</html>

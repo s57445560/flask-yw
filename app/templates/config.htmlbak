@@ -1,0 +1,16 @@
+﻿{% include 'test/s.html' %}
+<form class="form-horizontal" role="form">
+<div class="form-group">
+      <label class="col-sm-3 control-label">Selects</label>
+           <div class="col-sm-9">
+           <select class="form-control">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+         </select>
+   </div>
+</div>
+</form>
+{% include 'test/x.html' %}
